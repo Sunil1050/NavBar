@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.nav-bar {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.nav-button {
+    border-style: none;
+    background-color: #ffffff;
+}
+
+.button-icon {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.nav-items {
+    font-size: 18px;
+    color: gray;
+    padding: 16px;
+    border-color: #594d6d;
+    border-style: ridge;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left: 0px;
+    margin-bottom: 0px;
+}
+
+.signup {
+    background-color: #ffdda9;
+    color: #12022f;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    border-width: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.nav-elements {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .bg-container {
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-button {
+        border-style: none;
+        background-color: #ffffff;
+        display: none;
+    }
+
+    .nav-elements {
+        display: block;
+    }
+}
